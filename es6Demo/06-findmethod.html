@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let arr=[
+			{
+				name:"小明",
+				age:20
+			},
+			{
+				name:"小李",
+				age:22
+			}
+		];
+		let result=arr.find(item=>item.age==22);
+		//let result=arr.find((item,index)=>{return item.age==22});
+		console.log(result);
+		//返回第一个满足条件的下标
+		let res=arr.findIndex((item,index)=>item.name=="小李");
+		console.log(res);
+		//判断数组是否包含某个值
+		let arr2=[2,3,5,7];
+		console.log(arr2.includes(2));
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let a=20;
+		let b=30;
+		let num=(a,b)=>{
+			console.log(a);
+			console.log(b);
+			return a+b;
+		}
+		console.log(num(a,b));
+		let jian=(a,b)=>a-b;
+		console.log(jian(a,b));
+		let shen=a=>a-30;
+		console.log(shen(b));
+
+		//箭头函数没有自己的this关键字
+		const xiaoming={name:"小明",age:18};
+		function jieshao(){
+			console.log(this);
+			return ()=>console.log(this);
+		}
+		const resultFn=jieshao.call(xiaoming);
+		resultFn();
+	</script>
+</body>
+</html>

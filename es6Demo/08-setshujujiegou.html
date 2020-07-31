@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let s1=new Set([2,3,4]);
+		console.log(s1);
+		console.log(s1.size);
+		s1.clear();
+		console.log(s1.size);
+
+		let s2=new Set([2,2,3,5,4,6,6]);
+		console.log(s2);
+
+		s2.add(7).add(8);
+		s2.delete(2);
+		console.log(s2.has(6));
+
+		//set转化为数组
+		console.log([...s2]);
+
+		s2.forEach(item=>console.log(item));
+	</script>
+</body>
+</html>
