@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div v-text="mesg"></div>
+		<div v-html="html"></div>
+		<input type="text" v-model="mesg">
+	</div>
+	<script type="text/javascript">
+		var vue=new Vue({
+			el:'#app',
+			data:{
+				mesg:'我在深夜学前端',
+				html:'<div>学习vue</div>'
+			}
+		});
+	</script>
+</body>
+</html>
